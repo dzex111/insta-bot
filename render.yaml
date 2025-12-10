@@ -4,4 +4,4 @@ services:
     env: python
     plan: free
     buildCommand: ""
-    startCommand: "gunicorn main:app --bind 0.0.0.0:10000"
+    startCommand: "gunicorn main:app --bind 0.0.0.0:$PORT"
